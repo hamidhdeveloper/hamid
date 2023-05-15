@@ -168,7 +168,7 @@ if (!message) {
                     </div>
                     <div className="row">
                       <div className="col-lg-12">
-                      <ReCAPTCHA sitekey="6LepXA4mAAAAAMZCqxVtG4UCQfZ0p3hAxXLZWI4S" onChange={handleCaptchaChange} />
+                      <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} onChange={handleCaptchaChange} />
                         <button type="submit" name="submit" >
                           Send Message
                         </button>
