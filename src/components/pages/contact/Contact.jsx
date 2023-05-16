@@ -1,15 +1,7 @@
 import React,{useState} from "react";
-import ReCAPTCHA from 'react-google-recaptcha';
 
 
 const Contact = () => {
-  // for recaptcha
-  // eslint-disable-next-line
-  const [captchaValue, setCaptchaValue] = useState('');
-  const handleCaptchaChange = (value) => {
-    setCaptchaValue(value);
-  };
-
 
   // contact form starts
   const [email, setEmail] = useState('');
@@ -19,31 +11,7 @@ const Contact = () => {
   const [emailError, setEmailError] = useState('');
   const [messageError, setMessageError] = useState('');
 
-  // validate on blur function
-const validateEmail = () => {
-  if (!email) {
-    setEmailError('Email is required');
-    return false;
-  } else if (!/\S+@\S+\.\S+/.test(email)) {
-    setEmailError('Email is invalid');
-    return false;
-  } else {
-    setEmailError('');
-    return true;
-  }
-};
-const validateMessage = () => {
-  if (!message) {
-    setMessageError('Project details required');
-    return false;
-  } else if (message.length < 20) {
-    setMessageError('At least 20 characters long');
-    return false;
-  } else {
-    setMessageError('');
-    return true;
-  }
-};
+
 
 
 const handleSubmit = async(e) => {
@@ -133,7 +101,7 @@ if (!message) {
                             name="email"
                             placeholder="Email*"
                             type="email"
-                            value={email} onChange={(e) => setEmail(e.target.value)} onBlur={validateEmail}
+                            value={email} onChange={(e) => setEmail(e.target.value)} 
                           />
                           <span className="alert-error" style={{color: '#FF004F'}}>{emailError}</span>
                         </div>
@@ -160,7 +128,7 @@ if (!message) {
                             id="comments"
                             name="comments"
                             placeholder="Tell Us About Project *"
-                            value={email} onChange={(e) => setMessage(e.target.value)} onBlur={validateMessage}
+                            value={email} onChange={(e) => setMessage(e.target.value)} 
                           />
                           <span className="alert-error" style={{color: '#FF004F'}}>{messageError}</span>
                         </div>
@@ -168,7 +136,6 @@ if (!message) {
                     </div>
                     <div className="row">
                       <div className="col-lg-12">
-                      <ReCAPTCHA sitekey={`6LepXA4mAAAAAMZCqxVtG4UCQfZ0p3hAxXLZWI4S`} onChange={handleCaptchaChange} />
                         <button type="submit" name="submit" >
                           Send Message
                         </button>

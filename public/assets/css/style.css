@@ -2634,8 +2634,9 @@ header.header-fixed .video .video-play-button {
 }
 
 header.header-fixed .video .video-play-button i {
-	top: 19px !important;
+	top: 12px !important;
 	position: relative;
+	font-size: 2rem;
 }
 
 header.header-fixed .menu li {

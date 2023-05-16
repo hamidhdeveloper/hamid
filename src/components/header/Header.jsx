@@ -130,10 +130,12 @@ const Header = () => {
           </div>
           <div className="video">
             <a
-              href="https://www.youtube.com/watch?v=5qRsGTuy3Rs"
-              className="popup-youtube video-play-button theme"
+              href="https://wa.me/+966575568052"
+              className=" video-play-button theme"
+              target="_blank" rel="noreferrer"
+              style={{cursor: "pointer"}}
             >
-              <i className="fas fa-play" />
+              <i className="fab fa-whatsapp" />
             </a>
           </div>
         </div>

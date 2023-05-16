@@ -10,7 +10,7 @@ const About = () => {
               <div className="thumb">
                 <img
                   className="wow fadeInUp"
-                  src="assets/img/illustration/3.png"
+                  src="assets/img/illustration/hamid-developer.png"
                   alt="Thumb"
                 />
               </div>
