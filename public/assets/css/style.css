@@ -6795,14 +6795,17 @@ footer {
 
 .pf-item .overlay-content .content h5 a {
 	color: var(--color-heading);
+	color: white;
 }
 
 .pf-item .overlay-content .content > a i {
 	color: var(--color-heading);
+	color: white;
 }
 
 .pf-item .overlay-content .content span {
 	color: var(--color-paragraph);
+	color: white;
 }
 
 .side .widget .logo::after {
