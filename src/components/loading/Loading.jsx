@@ -1,8 +1,10 @@
 import React from "react";
 
-const Loading = () => {
+const Loading = ({ showLoading }) => {
   return (
     <>
+    {showLoading && (
+      <>
       <div id="preloader">
         <div id="ambrox-preloader" className="ambrox-preloader">
           <div className="animation-preloader">
@@ -44,6 +46,8 @@ const Loading = () => {
           </div>
         </div>
       </div>
+      </>
+      )}
     </>
   );
 };

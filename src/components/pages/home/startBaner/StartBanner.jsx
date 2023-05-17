@@ -28,7 +28,7 @@ const StartBanner = () => {
                       <span className="cd-words-wrapper">
                         <b className="is-visible">Front End Developer</b>
                         <b className="is-hidden">Professional Coder</b>
-                        <b className="is-hidden">UI/UX Designer</b>
+                        <b className="is-hidden">Convert UI/UX Design to React </b>
                         <b className="is-hidden">WordPress Developer</b>
                         <b className="is-hidden">React Developer</b>
                       </span>

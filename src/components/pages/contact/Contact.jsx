@@ -1,59 +1,66 @@
 import React,{useState} from "react";
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
-
+   
   // contact form starts
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
   const [emailError, setEmailError] = useState('');
   const [messageError, setMessageError] = useState('');
+  const [success, setSuccess] = useState('');
+  const [error, setError] = useState('');
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = {
+      name: name,
+      phone: phone,
+      email: email,
+      message: message
+    };
 
+    // Perform form validation
+    let isValid = true;
 
-
-const handleSubmit = async(e) => {
-  e.preventDefault();
-  let formIsValid = true;
-  
-// validate email
-if (!email) {
-  setEmailError('Email is required');
-  formIsValid = false;
-} else if (!/\S+@\S+\.\S+/.test(email)) {
-  setEmailError('Email is invalid');
-  formIsValid = false;
-} else {
-  setEmailError('');
-}
-
-// validate message
-if (!message) {
-  setMessageError('Project details required');
-  formIsValid = false;
-} else if (message.length < 20) {
-  setMessageError('At least 20 characters long');
-  formIsValid = false;
-} else {
-  setMessageError('');
-}
-
-
-   
-// submit the form if there are no errors
-    if (formIsValid) {
-
-      
-      // const data = {
-      //   email: email,
-      //   message: message
-      // };
-      // api here
+    if (email.trim() === '') {
+      setEmailError('Email is required');
+      isValid = false;
+    } else {
+      setEmailError('');
     }
 
-}
+    if (message.trim() === '') {
+      setMessageError('Project details are required');
+      isValid = false;
+    } else {
+      setMessageError('');
+    }
+
+    if (isValid) {
+      setLoading(true);
+      // Form is valid, submit the data or perform any other desired action
+      // console.log('Form submitted:', { name, email, phone, message });
+      emailjs.send('service_db01apg','template_dms4ffq', formData, 'o2qIwYQ5tRlh2tXjD')
+	.then((response) => {
+    setLoading(false);
+    setSuccess('Message sent successfully')
+    setName('');
+    setEmail('');
+    setPhone('');
+    setMessage('');
+	  //  console.log('SUCCESS!', response.status, response.text);
+	}, (err) => {
+    setLoading(false);
+    setError('Message sending failed');
+	  //  console.log('FAILED...', err);
+	});
+    }
+  };
   // contact form ends
   return (
     <>
@@ -75,7 +82,7 @@ if (!message) {
                   </p>
                   <form
                     className="contact-form"
-                    onSubmit={handleSubmit}
+                    
                   >
                     <div className="row">
                       <div className="col-lg-12">
@@ -126,9 +133,9 @@ if (!message) {
                           <textarea
                             className="form-control"
                             id="comments"
-                            name="comments"
+                            name="message"
                             placeholder="Tell Us About Project *"
-                            value={email} onChange={(e) => setMessage(e.target.value)} 
+                            value={message} onChange={(e) => setMessage(e.target.value)} 
                           />
                           <span className="alert-error" style={{color: '#FF004F'}}>{messageError}</span>
                         </div>
@@ -136,14 +143,16 @@ if (!message) {
                     </div>
                     <div className="row">
                       <div className="col-lg-12">
-                        <button type="submit" name="submit" >
-                          Send Message
-                        </button>
+                        <span className="btn btn-md circle btn-theme effect" type="submit" name="submit"  onClick={handleSubmit}>
+                        Send Message 
+                        </span>
+                        { loading && (<img src="assets/img/ajax-loader.gif" class="loader" alt="loader" style={{height: '2rem'}} />)} 
                       </div>
                     </div>
                     {/* Alert Message */}
                     <div className="col-lg-12 alert-notification">
-                      <div id="message" className="alert-msg" ></div>
+                      <div id="message" className="alert-msg" style={{color:"#00C0FF"}} >{success && (success)}</div>
+                      <div id="message" className="alert-msg" style={{color:"#FF004F"}} >{error && (error)}</div>
                     </div>
                   </form>
                 </div>
