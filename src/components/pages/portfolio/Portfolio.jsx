@@ -1,6 +1,7 @@
 import React from "react";
 import Modal1 from "./modals/Modal1";
 import Modal2 from "./modals/Modal2";
+import Modal3 from "./modals/Modal3";
 
 const Portfolio = () => {
   return (
@@ -89,17 +90,17 @@ const Portfolio = () => {
                   {/* Single Item */}
                   <div className="pf-item">
                     <div className="overlay-content">
-                      <img src="assets/img/800x600.png" alt="thumb" />
+                      <img src="assets/img/pikaso.png" alt="thumb" />
                       <div className="content">
                         <div className="title">
-                          <span>Creative</span>
+                          <span>React Front-End</span>
                           <h5>
                             <a
                               href="/"
                               data-bs-toggle="modal"
                               data-bs-target="#projectSingleModal2"
                             >
-                              Gaming Apps
+                              PikaSo
                             </a>
                           </h5>
                         </div>
@@ -117,24 +118,24 @@ const Portfolio = () => {
                   {/* Single Item */}
                   <div className="pf-item">
                     <div className="overlay-content">
-                      <img src="assets/img/800x600.png" alt="thumb" />
+                      <img src="assets/img/mvp.png" alt="thumb" />
                       <div className="content">
                         <div className="title">
-                          <span>Business</span>
+                          <span>React Front-End</span>
                           <h5>
                             <a
                               href="/"
                               data-bs-toggle="modal"
-                              data-bs-target="#projectSingleModal"
+                              data-bs-target="#projectSingleModal3"
                             >
-                              Business Apps
+                              MVP
                             </a>
                           </h5>
                         </div>
                         <a
                           href="/"
                           data-bs-toggle="modal"
-                          data-bs-target="#projectSingleModal"
+                          data-bs-target="#projectSingleModal3"
                         >
                           <i className="fas fa-arrow-right" />
                         </a>
@@ -234,6 +235,7 @@ const Portfolio = () => {
         {/* Start Projects Single Modal */}
         <Modal1 />
         <Modal2 />
+        <Modal3 />
         {/* End Projects Single Modal */}
       </div>
     </>
