@@ -2,6 +2,9 @@ import React from "react";
 import Modal1 from "./modals/Modal1";
 import Modal2 from "./modals/Modal2";
 import Modal3 from "./modals/Modal3";
+import Modal4 from "./modals/Modal4";
+import Modal5 from "./modals/Modal5";
+import Modal6 from "./modals/Modal6";
 
 const Portfolio = () => {
   return (
@@ -146,24 +149,24 @@ const Portfolio = () => {
                   {/* Single Item */}
                   <div className="pf-item">
                     <div className="overlay-content">
-                      <img src="assets/img/800x600.png" alt="thumb" />
+                      <img src="assets/img/spf.png" alt="thumb" />
                       <div className="content">
                         <div className="title">
-                          <span>Invest</span>
+                          <span>WordPress Website</span>
                           <h5>
                             <a
                               href="/"
                               data-bs-toggle="modal"
-                              data-bs-target="#projectSingleModal"
+                              data-bs-target="#projectSingleModal4"
                             >
-                              Travel Apps
+                              SPF Services
                             </a>
                           </h5>
                         </div>
                         <a
                           href="/"
                           data-bs-toggle="modal"
-                          data-bs-target="#projectSingleModal"
+                          data-bs-target="#projectSingleModal4"
                         >
                           <i className="fas fa-arrow-right" />
                         </a>
@@ -174,24 +177,24 @@ const Portfolio = () => {
                   {/* Single Item */}
                   <div className="pf-item">
                     <div className="overlay-content">
-                      <img src="assets/img/800x600.png" alt="thumb" />
+                      <img src="assets/img/parkside.png" alt="thumb" />
                       <div className="content">
                         <div className="title">
-                          <span>Source</span>
+                          <span>WordPress Website</span>
                           <h5>
                             <a
                               href="/"
                               data-bs-toggle="modal"
-                              data-bs-target="#projectSingleModal"
+                              data-bs-target="#projectSingleModal5"
                             >
-                              Lifestyle Apps
+                              Parkside Pilates
                             </a>
                           </h5>
                         </div>
                         <a
                           href="/"
                           data-bs-toggle="modal"
-                          data-bs-target="#projectSingleModal"
+                          data-bs-target="#projectSingleModal5"
                         >
                           <i className="fas fa-arrow-right" />
                         </a>
@@ -202,24 +205,24 @@ const Portfolio = () => {
                   {/* Single Item */}
                   <div className="pf-item">
                     <div className="overlay-content">
-                      <img src="assets/img/800x600.png" alt="thumb" />
+                      <img src="assets/img/swps.png" alt="thumb" />
                       <div className="content">
                         <div className="title">
-                          <span>Finance</span>
+                          <span>WordPress Website</span>
                           <h5>
                             <a
                               href="/"
                               data-bs-toggle="modal"
-                              data-bs-target="#projectSingleModal"
+                              data-bs-target="#projectSingleModal6"
                             >
-                              Entertainment Apps
+                              SWPS Services
                             </a>
                           </h5>
                         </div>
                         <a
                           href="/"
                           data-bs-toggle="modal"
-                          data-bs-target="#projectSingleModal"
+                          data-bs-target="#projectSingleModal6"
                         >
                           <i className="fas fa-arrow-right" />
                         </a>
@@ -236,6 +239,9 @@ const Portfolio = () => {
         <Modal1 />
         <Modal2 />
         <Modal3 />
+        <Modal4 />
+        <Modal5 />
+        <Modal6 />
         {/* End Projects Single Modal */}
       </div>
     </>

@@ -49,7 +49,7 @@ const Modal2 = () => {
                               </li>
                               
                               <a href="https://pikasoai.netlify.app" style={{cursor:'pointer'}} target='_blank' rel="noreferrer">
-                                 https://pikasoai.netlify.app
+                                 PikaSo
                                 </a>
                              
                              

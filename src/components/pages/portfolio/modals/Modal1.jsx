@@ -49,7 +49,7 @@ const Modal1 = () => {
                               </li>
                               
                                 <a href="https://arabyai.netlify.app/" style={{cursor:'pointer'}} target='_blank' rel="noreferrer">
-                                 https://arabyai.netlify.app
+                                 Araby Ai
                                 </a>
                               
                             </ul>

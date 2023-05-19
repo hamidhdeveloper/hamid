@@ -49,7 +49,7 @@ const Modal3 = () => {
                               </li>
                               
                               <a href="https://hamidhdeveloper.github.io/mvp" style={{cursor:'pointer'}} target='_blank' rel="noreferrer">
-                                 https://hamidhdeveloper.github.io/mvp
+                                 MVP
                                 </a>
                              
                              
