@@ -1,6 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 
 const Header = () => {
+  // for close mobile menu
+  const [isCollapsed, setIsCollapsed] = useState(false);
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
+
   return (
     <>
       <header id="home">
@@ -14,6 +21,7 @@ const Header = () => {
                 className="navbar-toggle"
                 data-toggle="collapse"
                 data-target="#navbar-menu"
+                onClick={toggleCollapse}
               >
                 <i className="fa fa-bars" />
               </button>
@@ -23,7 +31,7 @@ const Header = () => {
             </div>
             {/* End Header Navigation */}
             {/* Collect the nav links, forms, and other content for toggling */}
-            <div className="collapse navbar-collapse" id="navbar-menu">
+            <div className={`collapse navbar-collapse collapse-mobile ${isCollapsed ? 'show' : ''}`} id="navbar-menu">
               <img src="assets/img/logo.png" alt="Logo" />
               <button
                 type="button"
@@ -39,32 +47,22 @@ const Header = () => {
                 data-out="fadeOutUp"
               >
                 <li>
-                  <a className="smooth-menu" href="#home">
+                  <a className="smooth-menu" href="#home" onClick={toggleCollapse}>
                     Home
                   </a>
                 </li>
                 <li>
-                  <a className="smooth-menu" href="#expertise">
-                    expertise
-                  </a>
-                </li>
-                <li>
-                  <a className="smooth-menu" href="#portfolio">
+                  <a className="smooth-menu" href="#portfolio" onClick={toggleCollapse}>
                     portfolio
                   </a>
                 </li>
                 <li>
-                  <a className="smooth-menu" href="#about">
+                  <a className="smooth-menu" href="#about" onClick={toggleCollapse}>
                     about
                   </a>
                 </li>
                 <li>
-                  <a className="smooth-menu" href="#blog">
-                    blog
-                  </a>
-                </li>
-                <li>
-                  <a className="smooth-menu" href="#contact">
+                  <a className="smooth-menu" href="#contact" onClick={toggleCollapse}>
                     contact
                   </a>
                 </li>
@@ -74,7 +72,7 @@ const Header = () => {
             {/* Main Nav */}
           </div>
           {/* Overlay screen for menu */}
-          <div className="overlay-screen" />
+          <div className={`overlay-screen ${isCollapsed ? 'opened' : ''}`} />
           {/* End Overlay screen for menu */}
         </nav>
         {/* End Navigation */}
