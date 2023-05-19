@@ -67,7 +67,7 @@ const Modal6 = () => {
                             </p>
                           </li>
                           <li>
-                            <h4>Social Media Management</h4>
+                            <h4>Social Media Management </h4>
                             <p>
                             I will handle Sydney Waterproofing Services' social media management, creating engaging content, managing accounts, and implementing effective strategies. By leveraging social media platforms, we will enhance their online presence, engage with their audience, and attract potential customers interested in their specialized waterproofing services in Sydney.
                             </p>
@@ -78,9 +78,9 @@ const Modal6 = () => {
                   </div>
                   <div className="main-content mt-40">
                     <p>
-                    Sydney Waterproofing Services excels in providing premium waterproofing solutions for domestic and commercial spaces in Sydney. They prioritize the protection of wet areas such as bathrooms, laundry rooms, and balconies from moisture damage. By skillfully applying waterproof barriers, they prevent leaks and preserve the structural integrity of buildings. Their expertise encompasses shower/bathroom walls, spa baths, bath podiums, complete floor spaces, wall-to-floor transitions, shower stalls, planter containers, roofs, retaining walls, and balconies. Backed by extensive knowledge and experience, Sydney Waterproofing Services ensures the effective waterproofing of these vital areas, creating durable and moisture-resistant environments.
+                    Sydney Waterproofing Services excels in providing premium waterproofing solutions for domestic and commercial spaces in Sydney. They prioritize the protection of wet areas such as bathrooms, laundry rooms, and balconies from moisture damage. By skillfully applying waterproof barriers, they prevent leaks and preserve the structural integrity of buildings. Their expertise encompasses shower/bathroom walls, spa baths, bath podiums, complete floor spaces, wall-to-floor transitions, shower stalls, planter containers, roofs, retaining walls, and balconies. Backed by extensive knowledge and experience, Sydney Waterproofing Services ensures the effective waterproofing of these vital areas, creating durable and moisture-resistant environments. 
                     </p>
-                    <div className="row">
+                    <div className="row"> 
                       <div className="col-lg-6 col-md-6">
                         <img src="assets/img/swps-1.png" alt="Thumb" />
                       </div>
