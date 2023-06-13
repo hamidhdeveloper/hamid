@@ -4,7 +4,7 @@ const StartBanner = () => {
   // resume download
     const resumeDownload = () => {
       const link = document.createElement('a');
-      link.href = 'assets/resume/hamid-resume-2023.pdf';
+      link.href = 'assets/resume/Hamid-Frontend-Developer-CV.pdf';
       link.download = 'Hamid Resume.pdf';
       link.click();
     }
