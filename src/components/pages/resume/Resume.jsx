@@ -81,7 +81,7 @@ const Resume = () => {
                           </li>
                           <li>
                             <h5>Address</h5>
-                            <p>Al Olaya Riyadh Saudi Arabia</p>
+                            <p>Dammam, Saudi Arabia</p>
                           </li>
                           <li>
                             <h5>Email</h5>
