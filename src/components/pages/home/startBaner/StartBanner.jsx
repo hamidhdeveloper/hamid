@@ -4,8 +4,8 @@ const StartBanner = () => {
   // resume download
     const resumeDownload = () => {
       const link = document.createElement('a');
-      link.href = 'assets/resume/Hamid-Frontend-Developer-CV.pdf';
-      link.download = 'Hamid Resume.pdf';
+      link.href = 'assets/resume/Hamid-Web-Developer-CV.pdf';
+      link.download = 'Hamid CV.pdf';
       link.click();
     }
   return (
@@ -43,7 +43,7 @@ const StartBanner = () => {
                     className="btn btn-md circle btn-theme effect"
                     onClick={resumeDownload}
                   >
-                    Download Resume
+                    Download CV
                   </span>
                 </div>
               </div>
