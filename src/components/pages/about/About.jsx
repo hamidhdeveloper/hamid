@@ -41,7 +41,7 @@ Hi, I'm Hamid, a React and WordPress developer. I develop web apps that solve re
                     </div>
                     <div className="content">
                       <h4>React Front-End Developer</h4>
-                      <span>3 Years Experience</span>
+                      <span>5+ Years Experience</span>
                     </div>
                   </li>
                 </ul>

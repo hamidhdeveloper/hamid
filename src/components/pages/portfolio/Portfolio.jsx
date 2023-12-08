@@ -124,14 +124,14 @@ const Portfolio = () => {
                       <img src="assets/img/mvp.png" alt="thumb" />
                       <div className="content">
                         <div className="title">
-                          <span>React Front-End</span>
+                          <span>Wordpress</span>
                           <h5>
                             <a
                               href="/"
                               data-bs-toggle="modal"
                               data-bs-target="#projectSingleModal3"
                             >
-                              MVP
+                              Mosafaha
                             </a>
                           </h5>
                         </div>

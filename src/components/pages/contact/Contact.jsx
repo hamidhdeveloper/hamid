@@ -184,7 +184,7 @@ const Contact = () => {
                       <div className="info">
                         <p>Address</p>
                         <h5>
-                        Dammam, <br /> Saudi Arabia (KSA) 
+                        Riyadh, <br /> Saudi Arabia (KSA) 
                         </h5>
                       </div>
                     </li>
