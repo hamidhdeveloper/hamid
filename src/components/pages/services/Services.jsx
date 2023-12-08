@@ -31,7 +31,7 @@ const Services = () => {
                   <a
                     href="/"
                     data-bs-toggle="modal"
-                    data-bs-target="#serviceSingleModal"
+                    data-bs-target="#"
                   >
                     Website design
                   </a>
@@ -50,7 +50,7 @@ const Services = () => {
                   <a
                     href="/"
                     data-bs-toggle="modal"
-                    data-bs-target="#serviceSingleModal"
+                    data-bs-target="#"
                   >
                    Web App Development
                   </a>
@@ -69,7 +69,7 @@ const Services = () => {
                   <a
                     href="/"
                     data-bs-toggle="modal"
-                    data-bs-target="#serviceSingleModal"
+                    data-bs-target="#"
                   >
                     UX/UI Design
                   </a>
